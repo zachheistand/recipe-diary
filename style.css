@@ -214,46 +214,25 @@ nav ul li a:hover {
     margin-top: 40px;
     padding: 20px;
     background-color: #f9f9f9;
-    /* Light background color for distinction */
     border-top: 2px solid #ccc;
-    /* Optional border to separate from the rest of the page */
 }
 
-/* Styling for the Notes section */
+/* Styling for the Notes section title */
 .recipe-footer h3 {
     font-size: 1.5em;
     color: #333;
     margin-bottom: 10px;
+    text-align: center;
+    /* Keeps the title centered */
 }
 
-.recipe-footer p {
-    font-size: 1.2em;
-    color: #666;
-    line-height: 1.5;
-}
-
-/* Styling for the Attributions section */
-.attributions {
-    list-style-type: none;
-    /* Remove default bullets */
-    padding-left: 0;
-}
-
-.attributions li {
-    font-size: 1.1em;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.attributions a {
-    color: #0066cc;
-    /* Blue color for links */
-    text-decoration: none;
-}
-
-.attributions a:hover {
-    text-decoration: underline;
-    /* Underline on hover */
+/* Left-justify the text in Notes (only the content, not the title) */
+.recipe-footer p,
+.recipe-footer ul {
+    text-align: left;
+    /* Left-align the text and lists */
+    margin-left: 20px;
+    /* Optional: Adds indentation to the left */
 }
 
 /* Styling for the Tips list */
@@ -269,4 +248,40 @@ nav ul li a:hover {
 .tips-list li {
     margin-bottom: 10px;
     /* Space between each list item */
+}
+
+/* Styling for the Attributions section title */
+.recipe-footer h4 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    /* Keeps the title centered */
+}
+
+/* Left-justify the text in Attributions (only the content, not the title) */
+.attributions {
+    list-style-type: none;
+    /* No bullets */
+    padding-left: 0;
+    font-size: 1.1em;
+    color: #333;
+    text-align: left;
+    /* Left-align the list items */
+}
+
+.attributions li {
+    margin-bottom: 10px;
+}
+
+.attributions a {
+    color: #0066cc;
+    /* Blue color for links */
+    text-decoration: none;
+}
+
+.attributions a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
 }
