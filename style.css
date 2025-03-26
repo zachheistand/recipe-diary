@@ -1,33 +1,186 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f8f8f8;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background: #f8f8f8;
+    color: #333;
+    text-align: center;
 }
 
+/* Header Styling */
 header {
-    background-color: #ff6347;
+    background: #ff6347;
+    /* Tomato color */
     color: white;
     padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+/* Search Bar */
+#searchBar {
+    width: 80%;
+    max-width: 500px;
+    padding: 12px;
+    margin: 20px auto;
+    display: block;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    outline: none;
+    transition: 0.3s;
 }
 
-li {
-    margin: 10px 0;
+#searchBar:focus {
+    border-color: #ff6347;
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
 }
 
-a {
+/* Recipe Grid */
+#recipeGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Recipe Cards */
+.recipe-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     text-decoration: none;
+    color: inherit;
+}
+
+.recipe-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.recipe-item p {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Back Link */
+.back-link {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background: #ff6347;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.back-link:hover {
+    background: #e04e3c;
+}
+
+/* Recipe Page Styling */
+main {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #ff6347;
+    border-bottom: 2px solid #ff6347;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #searchBar {
+        width: 90%;
+    }
+
+    #recipeGrid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
+/* Navigation Bar */
+nav {
+    background: #ff6347;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
     color: #333;
 }
 
-footer {
-    margin-top: 20px;
-    padding: 10px;
-    background: #ddd;
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
 }

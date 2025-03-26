@@ -6,22 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Recipes</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>My Recipe Collection</h1>
-    </header>
-    <main>
-        <p>Welcome to my collection of recipes! Click a recipe to see more details.</p>
+    <nav>
+        <div class="logo">Zach's Recipe Diary</div>
         <ul>
-            <li><a href="recipes/recipe1.html">Recipe 1</a></li>
-            <li><a href="recipes/recipe2.html">Recipe 2</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
+    </nav>
+
+    <main>
+        <input type="text" id="searchBar" placeholder="Search recipes..." onkeyup="searchRecipes()">
+        <div id="recipeGrid">
+            <script>
+                // Fetch the recipes.json file
+                fetch('recipes.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const recipeGrid = document.getElementById('recipeGrid');
+                        data.recipes.forEach(recipe => {
+                            const recipeElement = document.createElement('a');
+                            recipeElement.classList.add('recipe-item');
+                            recipeElement.setAttribute('href', `recipes/${recipe.name.toLowerCase().replace(/\s+/g, '-')}.html`);
+
+                            recipeElement.innerHTML = `
+                                    <img src="${recipe.image}" alt="${recipe.name}">
+                                    <p>${recipe.name}</p>
+                                `;
+
+                            recipeGrid.appendChild(recipeElement);
+                        });
+                    })
+                    .catch(error => console.error('Error loading image data:', error));
+            </script>
+        </div>
     </main>
-    <footer>
-        <p>© 2025 My Recipes</p>
-    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
