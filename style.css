@@ -285,3 +285,25 @@ nav ul li a:hover {
     text-decoration: underline;
     /* Underline on hover */
 }
+
+/* Style for the recipe image */
+.recipe-image {
+    width: 100%;
+    /* Make the image take full width (or adjust as needed) */
+    height: auto;
+    border-radius: 8px;
+    /* Optional: adds rounded corners to the image */
+    margin-bottom: 10px;
+    /* Adds spacing below the image */
+}
+
+/* Style for the servings text */
+.servings {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    /* Center-align the servings text under the image */
+    margin-bottom: 20px;
+    /* Adds spacing below the servings text */
+}
