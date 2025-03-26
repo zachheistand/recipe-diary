@@ -208,3 +208,65 @@ nav ul li a:hover {
         margin: 5px 0;
     }
 }
+
+/* General styling for the footer section */
+.recipe-footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Light background color for distinction */
+    border-top: 2px solid #ccc;
+    /* Optional border to separate from the rest of the page */
+}
+
+/* Styling for the Notes section */
+.recipe-footer h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.recipe-footer p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Styling for the Attributions section */
+.attributions {
+    list-style-type: none;
+    /* Remove default bullets */
+    padding-left: 0;
+}
+
+.attributions li {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.attributions a {
+    color: #0066cc;
+    /* Blue color for links */
+    text-decoration: none;
+}
+
+.attributions a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+/* Styling for the Tips list */
+.tips-list {
+    list-style-type: disc;
+    /* Adds bullet points */
+    padding-left: 20px;
+    /* Adds indentation to the list */
+    font-size: 1.2em;
+    color: #555;
+}
+
+.tips-list li {
+    margin-bottom: 10px;
+    /* Space between each list item */
+}
