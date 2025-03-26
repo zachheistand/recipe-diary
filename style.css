@@ -112,11 +112,35 @@ main img {
     margin-bottom: 20px;
 }
 
+/* Style for the ingredients list */
+.ingredients {
+    text-align: left;
+    margin: 20px 0;
+    padding-left: 20px;
+    /* Optional: Adds padding to the left */
+}
+
+/* Style for the instructions list */
+.instructions {
+    text-align: left;
+    margin: 20px 0;
+    padding-left: 20px;
+    /* Optional: Adds padding to the left */
+}
+
+/* Optional: Styling for the recipe title */
 h2 {
-    color: #ff6347;
-    border-bottom: 2px solid #ff6347;
-    padding-bottom: 5px;
-    display: inline-block;
+    text-align: center;
+    /* You can adjust this based on your design */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Optional: Styling for the headings */
+h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 /* Responsive */
