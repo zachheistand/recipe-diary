@@ -1,20 +1,8 @@
 {
     "recipes": [
         {
-            "name": "Spaghetti",
-            "image": "images/spaghetti.jpg"
-        },
-        {
-            "name": "Pancakes",
-            "image": "images/pancakes.jpg"
-        },
-        {
-            "name": "Salad",
-            "image": "images/salad.jpg"
-        },
-        {
-            "name": "Chocolate Cake",
-            "image": "images/chocolate-cake.jpg"
+            "name": "Chicken Shawarma Bowl",
+            "image": "images/chicken-shawarma-bowl.jpg"
         }
     ]
 }
